@@ -54,7 +54,7 @@ def get_query_embedding(query, api_key):
 
 def search_similar_chunks(query, top_k=5):  # Increased to 5
     """Search for most similar chunks"""
-    api_key = os.getenv("OPENAI_API_KEY")
+    api_key = "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"
     
     # Get query embedding
     query_embedding = get_query_embedding(query, api_key)
@@ -232,4 +232,5 @@ async def log_requests(request, call_next):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8003)
+
 
