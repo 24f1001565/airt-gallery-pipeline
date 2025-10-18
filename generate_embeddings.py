@@ -44,7 +44,7 @@ def generate_all_embeddings():
         chunks = json.load(f)
     
     # Get API credentials from environment
-    api_key = os.getenv("OPENAI_API_KEY")  # or your custom API key
+    api_key = "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"
     # api_url = os.getenv("EMBEDDING_API_URL")  # for custom API
     
     embeddings_data = []
@@ -78,3 +78,4 @@ def generate_all_embeddings():
 
 if __name__ == "__main__":
     generate_all_embeddings()
+
